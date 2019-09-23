@@ -806,7 +806,7 @@ p {
   height: auto;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
   .ovalball1 {
     top: calc(50% / 2 + 1130px);
   }
