@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>upqode/test-tasks</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/1c4f8093f2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/EaselPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Home -->
+      <div class="menuBarDay">
+        <div class="menuBar d-inline-flex justify-content-around mx-auto">
+          <div class="logoSector d-inline-flex justify-content-around align-items-baseline">
+            <img
+              src="./images/Path_716.svg"
+              width="30"
+              height="30"
+              class="d-inline-block align-top"
+              alt=""
+              
+            />
+          </a>
+          <p class="logoText">UPQODE</p>
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light pt-0">
+            <div class="navbar-collapse">
+                <div class="navbar-nav mr-auto justify-content-around">
+                  <a class="nav-item nav-link" href="#Home">Home</a>
+                  <a class="nav-item nav-link" href="#Services">Services</a>
+                  <a class="nav-item nav-link" href="#Team">Team</a>
+                  <a class="nav-item nav-link" href="#ContactUs">Contact Us</a>
+                </div>
+              </div>
+            </nav>
+            <a class="menu text-white"><i class="fas fa-bars"></i></a>
+        </div>
+      </div>
+    <div class="slider d-inline-flex align-items-center mx-auto mb-5" id="Home">
+      <div
+        class="slide current d-flex justify-content-center align-items-center"
+      >
+        <div class="content text-center mx-auto">
+          <h1 class="text-center mb-4">Mileage Made Simple</h1>
+          <p class="text-center">
+            Motivation And Your Personal Vision An Unbeatable Force
+          </p>
+          <button class='mainButton mt-5'>Start Free Trial</button>
+        </div>
+        </div>
+      <div class="slide d-flex justify-content-center align-items-center">
+        <div class="content text-center mx-auto">
+          <h1 class="text-center mb-4">Mileage Made Simple</h1>
+          <p class="text-center">
+            Motivation And Your Personal Vision An Unbeatable Force
+          </p>
+          <button class='mainButton mt-5'>Start Free Trial</button>
+        </div>
+      </div>
+      <div class="slide d-flex justify-content-center align-items-center">
+        <div class="content text-center mx-auto">
+          <h1 class="text-center mb-4">Mileage Made Simple</h1>
+          <p class="text-center">
+            Motivation And Your Personal Vision An Unbeatable Force
+          </p>
+          <button class='mainButton mt-5'>Start Free Trial</button>
+        </div>
+      </div>
+      <div class="slide d-flex justify-content-center align-items-center">
+        <div class="content text-center mx-auto">
+          <h1 class="text-center mb-4">Mileage Made Simple</h1>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            ipsum est sit ut at cum.
+          </p>
+          <button class='mainButton mt-5'>Start Free Trial</button>
+        </div>
+      </div>
+      <div class="slide d-flex justify-content-center align-items-center">
+        <div class="content text-center mx-auto">
+          <h1 class="text-center mb-4">Mileage Made Simple</h1>
+          <p class="text-center">
+            Motivation And Your Personal Vision An Unbeatable Force
+          </p>
+          <button class='mainButton mt-5'>Start Free Trial</button>
+        </div>
+      </div>
+      <div class="slide d-flex justify-content-center align-items-center">
+        <div class="content text-center mx-auto">
+          <h1 class="text-center mb-4">Mileage Made Simple</h1>
+          <p class="text-center">
+            Motivation And Your Personal Vision An Unbeatable Force
+          </p>
+          <button class='mainButton mt-5'>Start Free Trial</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-navbar d-inline-flex justify-content-center">
+        <div class="navbar-oval p-3 d-flex justify-content-center align-items-center" id='next1'><div class="item" id='left'></div></div>    
+        <div class="navbar-oval p-3 d-flex justify-content-center align-items-center"><div class="item"></div></div>    
+        <div class="navbar-oval p-3 d-flex justify-content-center align-items-center" id='prev1'><div class="item" id='right'></div></div>    
+    </div>
+    <div class="buttons">
+      <button id="prev"><i class="fas fa-arrow-left"></i></button>
+      <button id="next"><i class="fas fa-arrow-right"></i></button>
+    </div>
+    <!-- Services -->
+    <div class="containerServices" id='Services'>
+      <div class="ovalball1" id="ball">
+        <div class="ovalball2">
+          <span class="ovalball3"></span>
+        </div>
+      </div>
+      <div class="rowText1">
+        <h1>Track every trip you make</h1>
+        <div class="rowText1Support">
+          <p>
+            Every one of your trips is captured immidiately and is never
+            forgotten.
+          </p>
+        </div>
+        <div class="support1 d-inline-grid justify-content-start">
+          <div class="supportOver1 d-inline-flex align-items-center">
+            <span class="pl-1"><img src="./images/Path (2).svg" alt=""/></span>
+            <p class="ml-2 pt-3">No signal dropout</p>
+          </div>
+          <div class="supportOver1 d-inline-flex align-items-center">
+            <span class="pl-1"><img src="./images/Path (2).svg" alt=""/></span>
+            <p class="ml-2 pt-3">No missed trips</p>
+          </div>
+          <button class="rectangle1">
+            learn more
+            <img src="./images/if_260_462624.svg" alt="" />
+          </button>
+        </div>
+      </div>
+        <div class="oval1">
+          <div class="oval2">
+            <div class="oval3">
+              <img src="./images/Bitmap.svg" id="bitmap" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="rowText2">
+        <h1>Classify with a single swipe</h1>
+        <div class="rowText2Support">
+          <p>
+            Swipe right for business. Swipe left for personal. It’s as easy as
+            that.
+          </p>
+        </div>
+        <div class="support2 d-inline-grid justify-content-start">
+          <div class="supportOver2 d-inline-flex align-items-center">
+            <span class="pl-1"><img src="./images/Path (2).svg" alt=""/></span>
+            <p class="ml-2 pt-3">Review trips on the go</p>
+          </div>
+          <div class="supportOver2 d-inline-flex align-items-center">
+            <span class="pl-1"><img src="./images/Path (2).svg" alt=""/></span>
+            <p class="ml-2 pt-3">Classify journeys in seconds</p>
+          </div>
+          <button class="rectangle2">
+            learn more
+            <img src="./images/if_260_462624.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <img src="./images/Path 2.svg" id="path" alt="" />
+      <div class="oval4">
+        <div class="oval5">
+          <div class="oval6">
+            <img src="./images/Bitmap.svg" id="bitmap2" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="oval7">
+      <div class="oval8">
+        <div class="oval9">
+          <img src="./images/Bitmap.svg" id="bitmap3" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="rowText3">
+      <h1>Claim your money back with ease</h1>
+      <div class="rowText3Support">
+        <p>
+          Claiming mileage has never been so easy, with all calculations done
+          for you.
+        </p>
+      </div>
+      <div class="support3 d-inline-grid justify-content-start">
+        <div class="supportOver3 d-inline-flex align-items-center">
+          <span class="pl-1"><img src="./images/Path (2).svg" alt=""/></span>
+          <p class="ml-2 pt-3">100% HMRC compliance</p>
+        </div>
+        <div class="supportOver3 d-inline-flex align-items-center">
+          <span class="pl-1"><img src="./images/Path (2).svg" alt=""/></span>
+          <p class="ml-2 pt-3">All logs in one place</p>
+        </div>
+        <button class="rectangle3">
+          learn more
+          <img src="./images/if_260_462624.svg" alt="" />
+        </button>
+      </div>
+    </div> 
+    <!-- Contacts -->
+    <div class="containerMapContacts" id='ContactUs'>
+      <div class="mx-auto" id="map"></div>
+      <svg style="display:none;">
+        <defs>
+          <g id="home">
+            <path
+              fill="#90A4AE"
+              d="M42,48H6c-3.3,0-6-2.7-6-6V6c0-3.3,2.7-6,6-6h36c3.3,0,6,2.7,6,6v36C48,45.3,45.3,48,42,48z"
+            />
+            <path
+              fill="#212121"
+              d="M20.8,35.5v-9.6h6.4v9.6h8V22.7H40L24,8.3L8,22.7h4.8v12.8H20.8z"
+            />
+          </g>
+
+          <g id="search">
+            <path
+              fill="#90A4AE"
+              d="M22.9,20.1h-1.5l-0.5-0.5c1.8-2.1,2.9-4.8,2.9-7.7C23.8,5.3,18.5,0,11.9,0S0,5.3,0,11.9s5.3,11.9,11.9,11.9
+                c3,0,5.7-1.1,7.7-2.9l0.5,0.5v1.4l9.1,9.1l2.7-2.7L22.9,20.1z M11.9,20.1c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2
+                S16.4,20.1,11.9,20.1z"
+            />
+          </g>
+
+          <g id="mapper">
+            <path
+              fill="#90A4AE"
+              d="M16,14.2c-1,0-1.8,0.8-1.8,1.8s0.8,1.8,1.8,1.8c1,0,1.8-0.8,1.8-1.8S17,14.2,16,14.2z M16,0
+                C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16s16-7.2,16-16C32,7.2,24.8,0,16,0z M19.5,19.5L6.4,25.6l6.1-13.1l13.1-6.1L19.5,19.5z"
+            />
+          </g>
+
+          <g id="planner">
+            <path
+              fill="#90A4AE"
+              d="M28.4,3.6h-1.8V0h-3.6v3.6H8.9V0H5.3v3.6H3.6C1.6,3.6,0,5.1,0,7.1L0,32c0,2,1.6,3.6,3.6,3.6h24.9c2,0,3.6-1.6,3.6-3.6V7.1C32,5.1,30.4,3.6,28.4,3.6z M28.4,32H3.6V12.4h24.9V32z M7.1,16H16v8.9H7.1V16z"
+            />
+          </g>
+        </defs>
+      </svg>
+      <div class="cardBarcelona" style="width: 18rem;">
+          <img src="./images/barcelona.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-white">Barcelona</h5>
+            <p class="card-text text-primary">Barcelona is the capital and largest city of Catalonia and Spain's second largest city, with a population of over one and half million people (over five million in the whole province).</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="mainInfo d-inline-flex justify-content-start align-items-start">
+                <span class='mr-4 pl-3 pt-1'><i class="far fa-clock"></i></span>
+                <h3>Work Schedule</h3>
+              </div>
+              <div class="infoText d-inline-flex">
+                <h6>Mon - Sat:</h6><p class='pl-3'>11:00-19:00,</p>
+                </div>
+              <div class="infoText d-inline-flex">
+                <h6>Sun:</h6><p>11:00-16:00,</p>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="mainInfo d-inline-flex justify-content-start align-items-center">
+                  <span class='mr-4 pl-3'><i class="fas fa-phone-square-alt"></i></span>
+                  <h3>Head Office</h3>
+              </div>
+              <p class='ml-3'>(0043) 568 456 902</br>(0043) 568 456 902</p></li>
+              <li class="list-group-item">
+                <div class="mainInfo d-inline-flex justify-content-start align-items-center">
+                  <span class='mr-4 pl-3'><i class="far fa-envelope"></i></span>
+                <h3>Head Office</h3>
+                </div>
+                <div class="infoText ml-3">
+                <p>hello@pad.architecture</p>
+                <p>support@pad.architecture</p>
+              </div>
+              </li>
+          </ul>
+        </div>
+      <div class="cardBrussels" id='Brussels' style="width: 18rem;">
+          <img src="./images/Brussels.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-white">Brussels</h5>
+            <p class="card-text text-primary">Brussels (French: Bruxelles, Dutch: Brussel) is the capital city of Belgium and of Brussels Capital Region. It is entirely surrounded by Dutch-speaking Flanders and its constituent Flemish Brabant province. </p>
+          </div>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="mainInfo d-inline-flex justify-content-start align-items-start">
+                  <span class='mr-4 pl-3 pt-1'><i class="far fa-clock"></i></span>
+                  <h3>Work Schedule</h3>
+                </div>
+                <div class="infoText d-inline-flex">
+                  <h6>Mon - Sat:</h6><p class='pl-3'>11:00-19:00,</p>
+                  </div>
+                <div class="infoText d-inline-flex">
+                  <h6>Sun:</h6><p>11:00-16:00,</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="mainInfo d-inline-flex justify-content-start align-items-center">
+                    <span class='mr-4 pl-3'><i class="fas fa-phone-square-alt"></i></span>
+                    <h3>Head Office</h3>
+                </div>
+                <p class='ml-3'>(0043) 568 456 902</br>(0043) 568 456 902</p></li>
+                <li class="list-group-item">
+                  <div class="mainInfo d-inline-flex justify-content-start align-items-center">
+                    <span class='mr-4 pl-3'><i class="far fa-envelope"></i></span>
+                  <h3>Head Office</h3>
+                  </div>
+                  <div class="infoText ml-3">
+                  <p>hello@pad.architecture</p>
+                  <p>support@pad.architecture</p>
+                </div>
+                </li>
+            </ul>
+        </div>
+      <div class="cardHelsinki" id='Helsinki' style="width: 18rem;">
+          <img src="./images/Helsinki.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-white">Helsinki</h5>
+            <p class="card-text text-primary">Helsinki (Finnish) or Helsingfors (Swedish) is the capital of Finland. Founded in 1550, the "Daughter of the Baltic" has been the Finnish capital since 1812.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="mainInfo d-inline-flex justify-content-start align-items-start">
+                  <span class='mr-4 pl-3 pt-1'><i class="far fa-clock"></i></span>
+                  <h3>Work Schedule</h3>
+                </div>
+                <div class="infoText d-inline-flex">
+                  <h6>Mon - Sat:</h6><p class='pl-3'>11:00-19:00,</p>
+                  </div>
+                <div class="infoText d-inline-flex">
+                  <h6>Sun:</h6><p>11:00-16:00,</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="mainInfo d-inline-flex justify-content-start align-items-center">
+                    <span class='mr-4 pl-3'><i class="fas fa-phone-square-alt"></i></span>
+                    <h3>Head Office</h3>
+                </div>
+                <p class='ml-3'>(0043) 568 456 902</br>(0043) 568 456 902</p></li>
+                <li class="list-group-item">
+                  <div class="mainInfo d-inline-flex justify-content-start align-items-center">
+                    <span class='mr-4 pl-3'><i class="far fa-envelope"></i></span>
+                  <h3>Head Office</h3>
+                  </div>
+                  <div class="infoText ml-3">
+                  <p>hello@pad.architecture</p>
+                  <p>support@pad.architecture</p>
+                </div>
+                </li>
+            </ul>
+        </div>
+      <div class="cardKyiv" id='Kyiv' style="width: 18rem;">
+          <img src="./images/Kyiv.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-white">Kyiv</h5>
+            <p class="card-text text-primary">Kyiv or Kiev (Ukrainian: Київ) is the capital and largest city of Ukraine with - officially - approximately 3 million inhabitants (unofficially up to 4 million inhabitants).</p>
+          </div>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="mainInfo d-inline-flex justify-content-start align-items-start">
+                  <span class='mr-4 pl-3 pt-1'><i class="far fa-clock"></i></span>
+                  <h3>Work Schedule</h3>
+                </div>
+                <div class="infoText d-inline-flex">
+                  <h6>Mon - Sat:</h6><p class='pl-3'>11:00-19:00,</p>
+                  </div>
+                <div class="infoText d-inline-flex">
+                  <h6>Sun:</h6><p>11:00-16:00,</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="mainInfo d-inline-flex justify-content-start align-items-center">
+                    <span class='mr-4 pl-3'><i class="fas fa-phone-square-alt"></i></span>
+                    <h3>Head Office</h3>
+                </div>
+                <p class='ml-3'>(0043) 568 456 902</br>(0043) 568 456 902</p></li>
+                <li class="list-group-item">
+                  <div class="mainInfo d-inline-flex justify-content-start align-items-center">
+                    <span class='mr-4 pl-3'><i class="far fa-envelope"></i></span>
+                  <h3>Head Office</h3>
+                  </div>
+                  <div class="infoText ml-3">
+                  <p>hello@pad.architecture</p>
+                  <p>support@pad.architecture</p>
+                </div>
+                </li>
+            </ul>
+        </div>
+      <div class="cardWarsaw" id='Warsaw' style="width: 18rem;">
+          <img src="./images/Warsaw.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-white">Warsawa</h5>
+            <p class="card-text text-primary">Warsaw is the capital of Poland and, with 1.7 million inhabitants, its largest city. It is located on the Vistula River (Polish: Wisła), roughly equidistant (350 km, 217 mi) from both the Baltic Sea.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="mainInfo d-inline-flex justify-content-start align-items-start">
+                  <span class='mr-4 pl-3 pt-1'><i class="far fa-clock"></i></span>
+                  <h3>Work Schedule</h3>
+                </div>
+                <div class="infoText d-inline-flex">
+                  <h6>Mon - Sat:</h6><p class='pl-3'>11:00-19:00,</p>
+                  </div>
+                <div class="infoText d-inline-flex">
+                  <h6>Sun:</h6><p>11:00-16:00,</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="mainInfo d-inline-flex justify-content-start align-items-center">
+                    <span class='mr-4 pl-3'><i class="fas fa-phone-square-alt"></i></span>
+                    <h3>Head Office</h3>
+                </div>
+                <p class='ml-3'>(0043) 568 456 902</br>(0043) 568 456 902</p></li>
+                <li class="list-group-item">
+                  <div class="mainInfo d-inline-flex justify-content-start align-items-center">
+                    <span class='mr-4 pl-3'><i class="far fa-envelope"></i></span>
+                  <h3>Head Office</h3>
+                  </div>
+                  <div class="infoText ml-3">
+                  <p>hello@pad.architecture</p>
+                  <p>support@pad.architecture</p>
+                </div>
+                </li>
+            </ul>
+        </div>
+      <nav class="nav__cont">
+        <ul class="nav">
+          <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+              <use xlink:href="#home"></use>
+            </svg>
+            <a href="" to="slider">Where you wanna go?</a>
+          </li>
+
+          <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <use xlink:href="#search"></use>
+            </svg>
+            <a href="">Search</a>
+          </li>
+
+          <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <use xlink:href="#mapper"></use>
+            </svg>
+            <a href="">Map</a>
+            <ul class="items_capitals">
+              <li class="nav__items" id="barcelona">Barcelona</li>
+              <li class="nav__items" id="brussels">Brussels</li>
+              <li class="nav__items" id="helsinki">Helsinki</li>
+              <li class="nav__items" id="kyiv">Kyiv</li>
+              <li class="nav__items" id="warsaw">Warsaw</li>
+            </ul>
+          </li>
+          <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 35.6">
+              <use xlink:href="#planner"></use>
+            </svg>
+            <a href="" id="planner">Planner</a>
+          </li>
+        </ul>
+      </nav>
+    </div> 
+    <div class="footerContainer text-center mx-auto justify-content-center align-items-center mx-auto">
+      <div class="logoSector d-inline-flex justify-content-around align-items-baseline mx-auto mt-5">
+        <img
+          src="./images/Path_716.svg"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+          
+        />
+      </a>
+      <p class="logoText">UPQODE</p>
+      </div>
+      <div class="logoSectorText d-inline-flex">
+        <i class="far fa-copyright p-2"></i><p>UpQode 2019. All Right Reserved</p>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLGtzMmBwPYUb1kkMOuuPEQbVve93FrHc&callback=initMap"
+      type="text/javascript"
+    >
+      google.maps.event.addDomListener(window,'load', initMap);
+    </script>
+  </body>
+</html>
